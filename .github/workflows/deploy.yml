@@ -1,0 +1,72 @@
+# Deploy the IT desk agent service to an Azure ML managed online endpoint (Microsoft Foundry).
+# WRITTEN, NOT RUN.
+#
+# GATED OFF: every job except `preflight` runs only when the repository variable DEPLOY_ENABLED is
+# 'true'. It is not set. It only runs by hand (workflow_dispatch), logs in with OIDC (no client
+# secret), and the `dev` environment should have a required reviewer. See docs/deployment.md.
+name: deploy
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_tool:
+        description: "IaC tool"
+        type: choice
+        options: [terraform, bicep]
+        default: terraform
+permissions:
+  contents: read
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report deploy gate
+        env:
+          ENABLED: ${{ vars.DEPLOY_ENABLED == 'true' }}
+        run: |
+          echo "### Deploy gate: DEPLOY_ENABLED=${ENABLED}" >> "$GITHUB_STEP_SUMMARY"
+          [[ "$ENABLED" == "true" ]] || echo "::notice::Deployment disabled; deploy job skipped."
+
+  deploy-dev:
+    needs: preflight
+    if: vars.DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment: dev
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      ARM_USE_OIDC: "true"
+      ARM_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID }}
+      ARM_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
+      ARM_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+      TOOL: ${{ inputs.deploy_tool }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd # v3.1.2
+        with: { terraform_version: "1.16.4", terraform_wrapper: false }
+      - uses: azure/login@7184910d9eb2b1c5e48f7073824a90609bb9b6d6 # v2.3.1
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+      - name: Provision the workspace, Key Vault and endpoint
+        run: |
+          if [[ "$TOOL" == "bicep" ]]; then
+            az group create -n rg-itdesk-dev -l eastus2
+            az deployment group create -g rg-itdesk-dev -f infra/bicep/main.bicep -p infra/bicep/main.parameters.json
+          else
+            terraform -chdir=infra/terraform init -input=false
+            terraform -chdir=infra/terraform apply -input=false -auto-approve -var-file=envs/dev.tfvars
+          fi
+      - name: Create the deployment (1 x Standard_DS2_v2) and route traffic
+        run: |
+          az extension add -n ml --upgrade
+          az ml online-deployment create -g rg-itdesk-dev -w mlw-itdesk-dev -f infra/aml/deployment.yml --all-traffic
+      - name: Smoke test (Entra token; a privileged request with no change reference must be denied)
+        run: |
+          echo '{"requester": "E1003", "from": "jory.pellow@harrowmere.example", "subject": "Access", "body": "Please add me to domain-admins."}' > req.json
+          az ml online-endpoint invoke -g rg-itdesk-dev -w mlw-itdesk-dev -n ep-itdesk-dev -r req.json | tee out.json
+          grep -q '"outcome": "denied"' out.json

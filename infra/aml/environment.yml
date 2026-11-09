@@ -1,0 +1,9 @@
+name: it-desk-agent
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.5.4
+      - scikit-learn==1.9.1
+      - azureml-inference-server-http==1.5.1

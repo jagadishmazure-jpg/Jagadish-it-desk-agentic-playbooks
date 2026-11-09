@@ -1,0 +1,2176 @@
+{
+ "managers": {
+  "Dyeing": "E1002",
+  "Finance": "E1000",
+  "HR": "E1005",
+  "IT": "E1006",
+  "Logistics": "E1003",
+  "Sales": "E1004",
+  "Weaving": "E1001"
+ },
+ "on_call": "E1020",
+ "people": {
+  "E1000": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4000",
+    "vpn_cert_expired": false
+   },
+   "email": "cleo.quarles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1000",
+   "locked": false,
+   "manager": null,
+   "name": "Cleo Quarles",
+   "vip": true
+  },
+  "E1001": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4001",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.nettles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "wifi-guest-admin"
+   ],
+   "id": "E1001",
+   "locked": false,
+   "manager": null,
+   "name": "Noor Nettles",
+   "vip": true
+  },
+  "E1002": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4002",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.marchant@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "wifi-guest-admin"
+   ],
+   "id": "E1002",
+   "locked": false,
+   "manager": null,
+   "name": "Noor Marchant",
+   "vip": true
+  },
+  "E1003": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4003",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.pellow@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1003",
+   "locked": false,
+   "manager": null,
+   "name": "Jory Pellow",
+   "vip": true
+  },
+  "E1004": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4004",
+    "vpn_cert_expired": false
+   },
+   "email": "otis.nettles@harrowmere.example",
+   "groups": [
+    "teams-logistics",
+    "wifi-guest-admin"
+   ],
+   "id": "E1004",
+   "locked": false,
+   "manager": null,
+   "name": "Otis Nettles",
+   "vip": true
+  },
+  "E1005": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4005",
+    "vpn_cert_expired": false
+   },
+   "email": "dev.brindle@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-sales"
+   ],
+   "id": "E1005",
+   "locked": false,
+   "manager": null,
+   "name": "Dev Brindle",
+   "vip": true
+  },
+  "E1006": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4006",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.lowther@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1006",
+   "locked": false,
+   "manager": null,
+   "name": "Ines Lowther",
+   "vip": true
+  },
+  "E1007": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4007",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.lowther@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "teams-logistics"
+   ],
+   "id": "E1007",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Jory Lowther",
+   "vip": false
+  },
+  "E1008": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4008",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.thrale@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "erp-readonly"
+   ],
+   "id": "E1008",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Ines Thrale",
+   "vip": false
+  },
+  "E1009": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4009",
+    "vpn_cert_expired": false
+   },
+   "email": "edda.corran@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1009",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Edda Corran",
+   "vip": false
+  },
+  "E1010": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4010",
+    "vpn_cert_expired": false
+   },
+   "email": "tova.quarles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1010",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Tova Quarles",
+   "vip": false
+  },
+  "E1011": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4011",
+    "vpn_cert_expired": false
+   },
+   "email": "otis.jessop@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1011",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Otis Jessop",
+   "vip": false
+  },
+  "E1012": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4012",
+    "vpn_cert_expired": false
+   },
+   "email": "dev.ashby@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "teams-logistics"
+   ],
+   "id": "E1012",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Dev Ashby",
+   "vip": false
+  },
+  "E1013": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4013",
+    "vpn_cert_expired": false
+   },
+   "email": "sami.delacey@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales",
+    "domain-admins"
+   ],
+   "id": "E1013",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Sami Delacey",
+   "vip": false
+  },
+  "E1014": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4014",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.hollis@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-sales"
+   ],
+   "id": "E1014",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Ines Hollis",
+   "vip": false
+  },
+  "E1015": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4015",
+    "vpn_cert_expired": false
+   },
+   "email": "asha.everard@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "wifi-guest-admin"
+   ],
+   "id": "E1015",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Asha Everard",
+   "vip": false
+  },
+  "E1016": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4016",
+    "vpn_cert_expired": false
+   },
+   "email": "otis.corran@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "wifi-guest-admin"
+   ],
+   "id": "E1016",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Otis Corran",
+   "vip": false
+  },
+  "E1017": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4017",
+    "vpn_cert_expired": false
+   },
+   "email": "bram.brindle@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "plm-designers"
+   ],
+   "id": "E1017",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Bram Brindle",
+   "vip": false
+  },
+  "E1018": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4018",
+    "vpn_cert_expired": false
+   },
+   "email": "femi.corran@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "wifi-guest-admin"
+   ],
+   "id": "E1018",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Femi Corran",
+   "vip": false
+  },
+  "E1019": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4019",
+    "vpn_cert_expired": false
+   },
+   "email": "gale.pellow@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "teams-logistics"
+   ],
+   "id": "E1019",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Gale Pellow",
+   "vip": false
+  },
+  "E1020": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4020",
+    "vpn_cert_expired": false
+   },
+   "email": "sami.thrale@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "teams-logistics"
+   ],
+   "id": "E1020",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Sami Thrale",
+   "vip": false
+  },
+  "E1021": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4021",
+    "vpn_cert_expired": false
+   },
+   "email": "femi.ingram@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "wifi-guest-admin"
+   ],
+   "id": "E1021",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Femi Ingram",
+   "vip": false
+  },
+  "E1022": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4022",
+    "vpn_cert_expired": false
+   },
+   "email": "mina.pellow@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-sales"
+   ],
+   "id": "E1022",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Mina Pellow",
+   "vip": false
+  },
+  "E1023": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4023",
+    "vpn_cert_expired": false
+   },
+   "email": "gale.thrale@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1023",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Gale Thrale",
+   "vip": false
+  },
+  "E1024": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4024",
+    "vpn_cert_expired": false
+   },
+   "email": "mina.hollis@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "teams-logistics"
+   ],
+   "id": "E1024",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Mina Hollis",
+   "vip": false
+  },
+  "E1025": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4025",
+    "vpn_cert_expired": false
+   },
+   "email": "quin.pellow@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1025",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Quin Pellow",
+   "vip": false
+  },
+  "E1026": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4026",
+    "vpn_cert_expired": false
+   },
+   "email": "veda.hollis@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1026",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Veda Hollis",
+   "vip": false
+  },
+  "E1027": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4027",
+    "vpn_cert_expired": false
+   },
+   "email": "femi.nettles@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-finance"
+   ],
+   "id": "E1027",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Femi Nettles",
+   "vip": false
+  },
+  "E1028": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4028",
+    "vpn_cert_expired": false
+   },
+   "email": "edda.fenwick@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1028",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Edda Fenwick",
+   "vip": false
+  },
+  "E1029": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4029",
+    "vpn_cert_expired": false
+   },
+   "email": "veda.corran@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-sales"
+   ],
+   "id": "E1029",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Veda Corran",
+   "vip": false
+  },
+  "E1030": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4030",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.brindle@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1030",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Ines Brindle",
+   "vip": false
+  },
+  "E1031": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4031",
+    "vpn_cert_expired": false
+   },
+   "email": "sami.fenwick@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-sales"
+   ],
+   "id": "E1031",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Sami Fenwick",
+   "vip": false
+  },
+  "E1032": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4032",
+    "vpn_cert_expired": false
+   },
+   "email": "gale.garrow@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "plm-designers"
+   ],
+   "id": "E1032",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Gale Garrow",
+   "vip": false
+  },
+  "E1033": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4033",
+    "vpn_cert_expired": false
+   },
+   "email": "otis.thrale@harrowmere.example",
+   "groups": [
+    "teams-logistics",
+    "wifi-guest-admin"
+   ],
+   "id": "E1033",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Otis Thrale",
+   "vip": false
+  },
+  "E1034": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4034",
+    "vpn_cert_expired": false
+   },
+   "email": "pria.thrale@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-finance"
+   ],
+   "id": "E1034",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Pria Thrale",
+   "vip": false
+  },
+  "E1035": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4035",
+    "vpn_cert_expired": false
+   },
+   "email": "tova.jessop@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1035",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Tova Jessop",
+   "vip": false
+  },
+  "E1036": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4036",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.thrale@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1036",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Noor Thrale",
+   "vip": false
+  },
+  "E1037": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4037",
+    "vpn_cert_expired": false
+   },
+   "email": "gale.ashby@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "teams-logistics"
+   ],
+   "id": "E1037",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Gale Ashby",
+   "vip": false
+  },
+  "E1038": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4038",
+    "vpn_cert_expired": false
+   },
+   "email": "kaia.kettle@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1038",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Kaia Kettle",
+   "vip": false
+  },
+  "E1039": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4039",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.ingram@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1039",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Jory Ingram",
+   "vip": false
+  },
+  "E1040": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4040",
+    "vpn_cert_expired": false
+   },
+   "email": "mina.oakham@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1040",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Mina Oakham",
+   "vip": false
+  },
+  "E1041": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4041",
+    "vpn_cert_expired": false
+   },
+   "email": "sami.ashby@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "wifi-guest-admin"
+   ],
+   "id": "E1041",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Sami Ashby",
+   "vip": false
+  },
+  "E1042": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4042",
+    "vpn_cert_expired": false
+   },
+   "email": "hugo.sowerby@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "teams-logistics"
+   ],
+   "id": "E1042",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Hugo Sowerby",
+   "vip": false
+  },
+  "E1043": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4043",
+    "vpn_cert_expired": false
+   },
+   "email": "wren.fenwick@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1043",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Wren Fenwick",
+   "vip": false
+  },
+  "E1044": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4044",
+    "vpn_cert_expired": false
+   },
+   "email": "femi.quarles@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "teams-logistics"
+   ],
+   "id": "E1044",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Femi Quarles",
+   "vip": false
+  },
+  "E1045": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4045",
+    "vpn_cert_expired": false
+   },
+   "email": "tova.corran@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1045",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Tova Corran",
+   "vip": false
+  },
+  "E1046": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4046",
+    "vpn_cert_expired": false
+   },
+   "email": "femi.fenwick@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-sales"
+   ],
+   "id": "E1046",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Femi Fenwick",
+   "vip": false
+  },
+  "E1047": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4047",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.delacey@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-sales"
+   ],
+   "id": "E1047",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Ines Delacey",
+   "vip": false
+  },
+  "E1048": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4048",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.delacey@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "wifi-guest-admin"
+   ],
+   "id": "E1048",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Jory Delacey",
+   "vip": false
+  },
+  "E1049": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4049",
+    "vpn_cert_expired": false
+   },
+   "email": "hugo.quarles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1049",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Hugo Quarles",
+   "vip": false
+  },
+  "E1050": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4050",
+    "vpn_cert_expired": false
+   },
+   "email": "dev.thrale@harrowmere.example",
+   "groups": [
+    "teams-logistics",
+    "wifi-guest-admin"
+   ],
+   "id": "E1050",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Dev Thrale",
+   "vip": false
+  },
+  "E1051": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4051",
+    "vpn_cert_expired": false
+   },
+   "email": "rhea.nettles@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-finance"
+   ],
+   "id": "E1051",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Rhea Nettles",
+   "vip": false
+  },
+  "E1052": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4052",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.garrow@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1052",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Ines Garrow",
+   "vip": false
+  },
+  "E1053": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4053",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.rudd@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1053",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Noor Rudd",
+   "vip": false
+  },
+  "E1054": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4054",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.brindle@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "teams-logistics"
+   ],
+   "id": "E1054",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Jory Brindle",
+   "vip": false
+  },
+  "E1055": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4055",
+    "vpn_cert_expired": false
+   },
+   "email": "quin.ingram@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-sales"
+   ],
+   "id": "E1055",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Quin Ingram",
+   "vip": false
+  },
+  "E1056": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4056",
+    "vpn_cert_expired": false
+   },
+   "email": "kaia.marchant@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "wifi-guest-admin"
+   ],
+   "id": "E1056",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Kaia Marchant",
+   "vip": false
+  },
+  "E1057": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4057",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.ingram@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1057",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Ines Ingram",
+   "vip": false
+  },
+  "E1058": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4058",
+    "vpn_cert_expired": false
+   },
+   "email": "cleo.oakham@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "plm-designers"
+   ],
+   "id": "E1058",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Cleo Oakham",
+   "vip": false
+  },
+  "E1059": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4059",
+    "vpn_cert_expired": false
+   },
+   "email": "bram.everard@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1059",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Bram Everard",
+   "vip": false
+  },
+  "E1060": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4060",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.marchant@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1060",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Ines Marchant",
+   "vip": false
+  },
+  "E1061": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4061",
+    "vpn_cert_expired": false
+   },
+   "email": "pria.rudd@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1061",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Pria Rudd",
+   "vip": false
+  },
+  "E1062": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4062",
+    "vpn_cert_expired": false
+   },
+   "email": "tova.nettles@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1062",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Tova Nettles",
+   "vip": false
+  },
+  "E1063": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4063",
+    "vpn_cert_expired": false
+   },
+   "email": "veda.quarles@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "wifi-guest-admin"
+   ],
+   "id": "E1063",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Veda Quarles",
+   "vip": false
+  },
+  "E1064": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4064",
+    "vpn_cert_expired": false
+   },
+   "email": "lior.delacey@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "teams-logistics"
+   ],
+   "id": "E1064",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Lior Delacey",
+   "vip": false
+  },
+  "E1065": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4065",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.jessop@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "plm-designers"
+   ],
+   "id": "E1065",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Noor Jessop",
+   "vip": false
+  },
+  "E1066": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4066",
+    "vpn_cert_expired": false
+   },
+   "email": "ulla.hollis@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-sales"
+   ],
+   "id": "E1066",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Ulla Hollis",
+   "vip": false
+  },
+  "E1067": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4067",
+    "vpn_cert_expired": false
+   },
+   "email": "zane.marchant@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1067",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Zane Marchant",
+   "vip": false
+  },
+  "E1068": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4068",
+    "vpn_cert_expired": false
+   },
+   "email": "kaia.ashby@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1068",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Kaia Ashby",
+   "vip": false
+  },
+  "E1069": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4069",
+    "vpn_cert_expired": false
+   },
+   "email": "asha.quarles@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1069",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Asha Quarles",
+   "vip": false
+  },
+  "E1070": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4070",
+    "vpn_cert_expired": false
+   },
+   "email": "zane.nettles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1070",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Zane Nettles",
+   "vip": false
+  },
+  "E1071": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4071",
+    "vpn_cert_expired": false
+   },
+   "email": "cleo.ingram@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1071",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Cleo Ingram",
+   "vip": false
+  },
+  "E1072": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4072",
+    "vpn_cert_expired": false
+   },
+   "email": "cleo.jessop@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-sales"
+   ],
+   "id": "E1072",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Cleo Jessop",
+   "vip": false
+  },
+  "E1073": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4073",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.sowerby@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "wifi-guest-admin"
+   ],
+   "id": "E1073",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Jory Sowerby",
+   "vip": false
+  },
+  "E1074": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4074",
+    "vpn_cert_expired": false
+   },
+   "email": "yara.kettle@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1074",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Yara Kettle",
+   "vip": false
+  },
+  "E1075": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4075",
+    "vpn_cert_expired": false
+   },
+   "email": "tova.lowther@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "wifi-guest-admin"
+   ],
+   "id": "E1075",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Tova Lowther",
+   "vip": false
+  },
+  "E1076": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4076",
+    "vpn_cert_expired": false
+   },
+   "email": "otis.quarles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "erp-readonly"
+   ],
+   "id": "E1076",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Otis Quarles",
+   "vip": false
+  },
+  "E1077": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4077",
+    "vpn_cert_expired": false
+   },
+   "email": "wren.garrow@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "wifi-guest-admin"
+   ],
+   "id": "E1077",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Wren Garrow",
+   "vip": false
+  },
+  "E1078": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4078",
+    "vpn_cert_expired": false
+   },
+   "email": "sami.marchant@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "wifi-guest-admin"
+   ],
+   "id": "E1078",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Sami Marchant",
+   "vip": false
+  },
+  "E1079": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4079",
+    "vpn_cert_expired": false
+   },
+   "email": "asha.pellow@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "teams-logistics"
+   ],
+   "id": "E1079",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Asha Pellow",
+   "vip": false
+  },
+  "E1080": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4080",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.sowerby@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-sales"
+   ],
+   "id": "E1080",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Noor Sowerby",
+   "vip": false
+  },
+  "E1081": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4081",
+    "vpn_cert_expired": false
+   },
+   "email": "asha.fenwick@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1081",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Asha Fenwick",
+   "vip": false
+  },
+  "E1082": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4082",
+    "vpn_cert_expired": false
+   },
+   "email": "zane.oakham@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "teams-logistics"
+   ],
+   "id": "E1082",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Zane Oakham",
+   "vip": false
+  },
+  "E1083": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4083",
+    "vpn_cert_expired": false
+   },
+   "email": "gale.delacey@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "wifi-guest-admin"
+   ],
+   "id": "E1083",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Gale Delacey",
+   "vip": false
+  },
+  "E1084": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4084",
+    "vpn_cert_expired": false
+   },
+   "email": "zane.brindle@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "plm-designers"
+   ],
+   "id": "E1084",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Zane Brindle",
+   "vip": false
+  },
+  "E1085": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4085",
+    "vpn_cert_expired": false
+   },
+   "email": "wren.nettles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "erp-readonly"
+   ],
+   "id": "E1085",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Wren Nettles",
+   "vip": false
+  },
+  "E1086": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4086",
+    "vpn_cert_expired": false
+   },
+   "email": "bram.ashby@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "teams-logistics"
+   ],
+   "id": "E1086",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Bram Ashby",
+   "vip": false
+  },
+  "E1087": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4087",
+    "vpn_cert_expired": false
+   },
+   "email": "quin.fenwick@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-finance"
+   ],
+   "id": "E1087",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Quin Fenwick",
+   "vip": false
+  },
+  "E1088": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4088",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.everard@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1088",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Jory Everard",
+   "vip": false
+  },
+  "E1089": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4089",
+    "vpn_cert_expired": false
+   },
+   "email": "hugo.pellow@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1089",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Hugo Pellow",
+   "vip": false
+  },
+  "E1090": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4090",
+    "vpn_cert_expired": false
+   },
+   "email": "veda.delacey@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "teams-logistics"
+   ],
+   "id": "E1090",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Veda Delacey",
+   "vip": false
+  },
+  "E1091": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4091",
+    "vpn_cert_expired": false
+   },
+   "email": "yara.ingram@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "teams-logistics"
+   ],
+   "id": "E1091",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Yara Ingram",
+   "vip": false
+  },
+  "E1092": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4092",
+    "vpn_cert_expired": false
+   },
+   "email": "sami.sowerby@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "teams-logistics"
+   ],
+   "id": "E1092",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Sami Sowerby",
+   "vip": false
+  },
+  "E1093": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4093",
+    "vpn_cert_expired": false
+   },
+   "email": "mina.lowther@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "wifi-guest-admin"
+   ],
+   "id": "E1093",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Mina Lowther",
+   "vip": false
+  },
+  "E1094": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4094",
+    "vpn_cert_expired": false
+   },
+   "email": "veda.lowther@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1094",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Veda Lowther",
+   "vip": false
+  },
+  "E1095": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4095",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.oakham@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "wifi-guest-admin"
+   ],
+   "id": "E1095",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Noor Oakham",
+   "vip": false
+  },
+  "E1096": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4096",
+    "vpn_cert_expired": false
+   },
+   "email": "edda.nettles@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "sharepoint-sales"
+   ],
+   "id": "E1096",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Edda Nettles",
+   "vip": false
+  },
+  "E1097": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4097",
+    "vpn_cert_expired": false
+   },
+   "email": "otis.lowther@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "wifi-guest-admin"
+   ],
+   "id": "E1097",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Otis Lowther",
+   "vip": false
+  },
+  "E1098": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4098",
+    "vpn_cert_expired": false
+   },
+   "email": "hugo.ashby@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1098",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Hugo Ashby",
+   "vip": false
+  },
+  "E1099": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4099",
+    "vpn_cert_expired": false
+   },
+   "email": "otis.ashby@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-sales"
+   ],
+   "id": "E1099",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Otis Ashby",
+   "vip": false
+  },
+  "E1100": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4100",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.everard@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "plm-designers"
+   ],
+   "id": "E1100",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Noor Everard",
+   "vip": false
+  },
+  "E1101": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4101",
+    "vpn_cert_expired": false
+   },
+   "email": "jory.ashby@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1101",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Jory Ashby",
+   "vip": false
+  },
+  "E1102": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4102",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.ashby@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1102",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Ines Ashby",
+   "vip": false
+  },
+  "E1103": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4103",
+    "vpn_cert_expired": false
+   },
+   "email": "lior.rudd@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1103",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Lior Rudd",
+   "vip": false
+  },
+  "E1104": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4104",
+    "vpn_cert_expired": false
+   },
+   "email": "yara.corran@harrowmere.example",
+   "groups": [
+    "teams-logistics",
+    "wifi-guest-admin"
+   ],
+   "id": "E1104",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Yara Corran",
+   "vip": false
+  },
+  "E1105": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4105",
+    "vpn_cert_expired": false
+   },
+   "email": "hugo.jessop@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1105",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Hugo Jessop",
+   "vip": false
+  },
+  "E1106": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4106",
+    "vpn_cert_expired": false
+   },
+   "email": "tova.oakham@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "teams-logistics"
+   ],
+   "id": "E1106",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Tova Oakham",
+   "vip": false
+  },
+  "E1107": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4107",
+    "vpn_cert_expired": false
+   },
+   "email": "femi.thrale@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "plm-designers"
+   ],
+   "id": "E1107",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Femi Thrale",
+   "vip": false
+  },
+  "E1108": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4108",
+    "vpn_cert_expired": false
+   },
+   "email": "wren.thrale@harrowmere.example",
+   "groups": [
+    "erp-readonly",
+    "teams-logistics"
+   ],
+   "id": "E1108",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Wren Thrale",
+   "vip": false
+  },
+  "E1109": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4109",
+    "vpn_cert_expired": false
+   },
+   "email": "zane.hollis@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1109",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Zane Hollis",
+   "vip": false
+  },
+  "E1110": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4110",
+    "vpn_cert_expired": false
+   },
+   "email": "veda.jessop@harrowmere.example",
+   "groups": [
+    "sharepoint-sales",
+    "teams-logistics"
+   ],
+   "id": "E1110",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Veda Jessop",
+   "vip": false
+  },
+  "E1111": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4111",
+    "vpn_cert_expired": false
+   },
+   "email": "noor.corran@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "wifi-guest-admin"
+   ],
+   "id": "E1111",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Noor Corran",
+   "vip": false
+  },
+  "E1112": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4112",
+    "vpn_cert_expired": false
+   },
+   "email": "gale.rudd@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "sharepoint-sales"
+   ],
+   "id": "E1112",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Gale Rudd",
+   "vip": false
+  },
+  "E1113": {
+   "dept": "Weaving",
+   "device": {
+    "compliant": true,
+    "id": "LT-4113",
+    "vpn_cert_expired": false
+   },
+   "email": "kaia.oakham@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-sales"
+   ],
+   "id": "E1113",
+   "locked": false,
+   "manager": "E1001",
+   "name": "Kaia Oakham",
+   "vip": false
+  },
+  "E1114": {
+   "dept": "Dyeing",
+   "device": {
+    "compliant": true,
+    "id": "LT-4114",
+    "vpn_cert_expired": false
+   },
+   "email": "lior.nettles@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "plm-designers"
+   ],
+   "id": "E1114",
+   "locked": false,
+   "manager": "E1002",
+   "name": "Lior Nettles",
+   "vip": false
+  },
+  "E1115": {
+   "dept": "Logistics",
+   "device": {
+    "compliant": true,
+    "id": "LT-4115",
+    "vpn_cert_expired": false
+   },
+   "email": "dev.pellow@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1115",
+   "locked": false,
+   "manager": "E1003",
+   "name": "Dev Pellow",
+   "vip": false
+  },
+  "E1116": {
+   "dept": "Sales",
+   "device": {
+    "compliant": true,
+    "id": "LT-4116",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.jessop@harrowmere.example",
+   "groups": [
+    "sharepoint-finance",
+    "teams-logistics"
+   ],
+   "id": "E1116",
+   "locked": false,
+   "manager": "E1004",
+   "name": "Ines Jessop",
+   "vip": false
+  },
+  "E1117": {
+   "dept": "HR",
+   "device": {
+    "compliant": true,
+    "id": "LT-4117",
+    "vpn_cert_expired": false
+   },
+   "email": "zane.jessop@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "teams-logistics"
+   ],
+   "id": "E1117",
+   "locked": false,
+   "manager": "E1005",
+   "name": "Zane Jessop",
+   "vip": false
+  },
+  "E1118": {
+   "dept": "IT",
+   "device": {
+    "compliant": true,
+    "id": "LT-4118",
+    "vpn_cert_expired": false
+   },
+   "email": "ines.corran@harrowmere.example",
+   "groups": [
+    "bi-dashboards",
+    "sharepoint-finance"
+   ],
+   "id": "E1118",
+   "locked": false,
+   "manager": "E1006",
+   "name": "Ines Corran",
+   "vip": false
+  },
+  "E1119": {
+   "dept": "Finance",
+   "device": {
+    "compliant": true,
+    "id": "LT-4119",
+    "vpn_cert_expired": false
+   },
+   "email": "yara.quarles@harrowmere.example",
+   "groups": [
+    "plm-designers",
+    "sharepoint-finance"
+   ],
+   "id": "E1119",
+   "locked": false,
+   "manager": "E1000",
+   "name": "Yara Quarles",
+   "vip": false
+  }
+ },
+ "security_approver": "E1013"
+}
