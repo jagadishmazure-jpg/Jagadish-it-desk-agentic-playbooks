@@ -8,7 +8,7 @@ license = { text = "MIT" }
 dependencies = ["numpy==2.5.4", "scikit-learn==1.9.1"]
 
 [project.optional-dependencies]
-dev = ["pytest==9.2.0", "ruff==0.17.4"]
+dev = ["pytest==9.2.0", "ruff==0.17.5"]
 measure = ["llama-cpp-python==0.3.36"]
 
 [build-system]
